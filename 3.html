@@ -14,36 +14,8 @@
 
     gtag('config', 'G-EGRMQWN8EV');
     </script>
-
-    <script>
-    function nightDayHandler(self) {
-      var target = document.querySelector('body')
-      if(self.value === 'night'){
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        self.value = 'day';
-
-        var links = document.querySelectorAll('a');
-        var i = 0;
-        while(i < links.length){
-          links[i].style.color = 'white';
-          i++;
-        }
-      }
-      else{
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        self.value = 'night';
-
-        var links = document.querySelectorAll('a');
-        var i = 0;
-        while(i < links.length){
-          links[i].style.color = 'black';
-          i++;
-        }
-      }
-    }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
